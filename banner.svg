@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="1000" height="280" role="img" aria-label="Abraham George Mannathukkaran - UAS engineer, flight control, embedded electronics">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050f18"/>
+      <stop offset="0.6" stop-color="#0a2236"/>
+      <stop offset="1" stop-color="#0f3a52"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2f7ea0" stroke-opacity="0.18" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.8" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#36bcf7" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#36bcf7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fov" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#ff7a45" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#ff7a45" stop-opacity="0"/>
+    </linearGradient>
+    <g id="blades">
+      <ellipse cx="0" cy="0" rx="26" ry="3.2" fill="#9fdcf5" fill-opacity="0.85"/>
+      <ellipse cx="0" cy="0" rx="3.2" ry="26" fill="#9fdcf5" fill-opacity="0.35"/>
+    </g>
+  </defs>
+
+  <rect width="1000" height="280" fill="url(#bg)"/>
+  <rect width="1000" height="280" fill="url(#grid)"/>
+  <rect width="1000" height="280" fill="url(#glow)"/>
+
+  <line x1="0" y1="215" x2="1000" y2="215" stroke="#36bcf7" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="2 8"/>
+
+  <g fill="none" stroke="#36bcf7" stroke-width="2" stroke-opacity="0.8">
+    <path d="M 20 50 L 20 20 L 50 20"/>
+    <path d="M 950 20 L 980 20 L 980 50"/>
+    <path d="M 20 230 L 20 260 L 50 260"/>
+    <path d="M 950 260 L 980 260 L 980 230"/>
+  </g>
+
+  <g fill="#2ee59d">
+    <rect x="896" y="38" width="6" height="8"><animate attributeName="opacity" values="1;0.5;1" dur="2.2s" repeatCount="indefinite"/></rect>
+    <rect x="906" y="33" width="6" height="13"><animate attributeName="opacity" values="1;0.5;1" dur="2.2s" begin="0.2s" repeatCount="indefinite"/></rect>
+    <rect x="916" y="28" width="6" height="18"><animate attributeName="opacity" values="1;0.5;1" dur="2.2s" begin="0.4s" repeatCount="indefinite"/></rect>
+    <rect x="926" y="23" width="6" height="23"><animate attributeName="opacity" values="1;0.5;1" dur="2.2s" begin="0.6s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <path d="M 500 238 C 560 196, 600 250, 655 212 S 735 178, 770 150" fill="none" stroke="#36bcf7" stroke-width="2" stroke-opacity="0.9" stroke-dasharray="7 7">
+    <animate attributeName="stroke-dashoffset" from="0" to="-56" dur="2.4s" repeatCount="indefinite"/>
+  </path>
+  <circle r="5" fill="#ffd166">
+    <animateMotion dur="5s" repeatCount="indefinite" path="M 500 238 C 560 196, 600 250, 655 212 S 735 178, 770 150"/>
+  </circle>
+
+  <path d="M 820 118 L 770 14 L 870 14 Z" fill="url(#fov)">
+    <animate attributeName="opacity" values="0.45;1;0.45" dur="3s" repeatCount="indefinite"/>
+  </path>
+
+  <g stroke="#9fdcf5" stroke-width="5" stroke-linecap="round">
+    <line x1="820" y1="140" x2="768" y2="88"/>
+    <line x1="820" y1="140" x2="872" y2="88"/>
+    <line x1="820" y1="140" x2="768" y2="192"/>
+    <line x1="820" y1="140" x2="872" y2="192"/>
+  </g>
+  <g fill="none" stroke="#36bcf7" stroke-width="1.5" stroke-opacity="0.7">
+    <circle cx="768" cy="88" r="30"/>
+    <circle cx="872" cy="88" r="30"/>
+    <circle cx="768" cy="192" r="30"/>
+    <circle cx="872" cy="192" r="30"/>
+  </g>
+  <g transform="translate(768 88)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="0.5s" repeatCount="indefinite"/><use href="#blades"/></g></g>
+  <g transform="translate(872 88)"><g><animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="0.5s" repeatCount="indefinite"/><use href="#blades"/></g></g>
+  <g transform="translate(768 192)"><g><animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="0.5s" repeatCount="indefinite"/><use href="#blades"/></g></g>
+  <g transform="translate(872 192)"><g><animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="0.5s" repeatCount="indefinite"/><use href="#blades"/></g></g>
+  <rect x="800" y="124" width="40" height="32" rx="8" fill="#0b2a40" stroke="#9fdcf5" stroke-width="2"/>
+  <circle cx="820" cy="122" r="5" fill="#ff7a45"/>
+  <circle cx="820" cy="140" r="4" fill="#ffd166">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <text x="60" y="88" font-family="'Courier New', Consolas, monospace" font-size="42" font-weight="700" fill="#ffffff" letter-spacing="3">A3ruz</text>
+  <text x="62" y="124" font-family="'Courier New', Consolas, monospace" font-size="14" fill="#9fdcf5" letter-spacing="2">MAKER // EXPLORER // TECH ENTHUSIAST</text>
+
+  <g font-family="'Courier New', Consolas, monospace" font-size="14" fill="#7fc8e8">
+    <text x="62" y="170">BUILDS    <tspan fill="#ffffff">DRONES / PCBS / FIRMWARE</tspan></text>
+    <text x="62" y="194">EXPLORES  <tspan fill="#ffffff">GPS-DENIED NAV / SENSOR FUSION</tspan></text>
+    <text x="62" y="218">TINKERS   <tspan fill="#ffffff">ARDUPILOT / PX4 / BETAFLIGHT</tspan></text>
+    <circle cx="68" cy="244" r="5" fill="#2ee59d">
+      <animate attributeName="opacity" values="1;0.15;1" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="84" y="249" fill="#2ee59d" font-weight="700" letter-spacing="2">STATUS: TINKERING WITH RANDOM IDEAS</text>
+  </g>
+</svg>
